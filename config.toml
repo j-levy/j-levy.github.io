@@ -1,4 +1,4 @@
-baseURL = "https://http://j-levy.github.io/"
+baseURL = "https://j-levy.github.io/j-levy"
 languageCode = "en-us"
 title = "Hugo Profile"
 theme = "hugo-profile"
