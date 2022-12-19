@@ -4,7 +4,7 @@ title = "Jonathan LEVY"
 theme = "hugo-profile"
 Paginate = 3
 enableRobotsTXT = true
-staticDir = [ "static/", "themes/static/" ]
+staticDir = [ "static/", "themes/hugo-profile/static/" ]
 [outputs]
 home = [ "HTML", "RSS", "JSON" ]
 page = [ "HTML", "RSS" ]
