@@ -4,7 +4,7 @@ title = "Jonathan LEVY"
 theme = "hugo-profile"
 Paginate = 3
 enableRobotsTXT = true
-staticDir = [ "static/", "themes/hugo-profile/static/" ]
+staticDir = [ "static/", "themes/hugo-profile/static/"]
 [outputs]
 home = [ "HTML", "RSS", "JSON" ]
 page = [ "HTML", "RSS" ]
@@ -27,8 +27,8 @@ url = "/gallery"
 weight = 2
 
 [params]
-title = "Hugo Profile"
-description = "Text about my cool site"
+title = "Jonathan LEVY"
+description = "My presentation"
 favicon = "/fav.png"
 useBootstrapCDN = false
 animate = true
@@ -41,7 +41,7 @@ animate = true
 
   [params.navbar]
   align = "ms-auto"
-  brandName = "Hugo Profile"
+  brandName = "Jonathan LEVY"
   disableSearch = false
 
     [params.navbar.menus]
@@ -55,197 +55,129 @@ animate = true
   [params.hero]
   enable = true
   intro = "Hi, my name is"
-  title = "Isabella."
-  subtitle = "I build things for the web"
-  content = "A passionate web app developer. I tend to make use of modern web technologies to build websites that looks great, feels fantastic, and functions correctly."
+  title = "Jonathan LEVY."
+  subtitle = "I develop software. Maybe for you?"
+  content = "Mainly versed in C++, CUDA and Python with a touch of Qt5. When I'd like something to exist, I may end up making it myself. In the end, we are always programming for humans."
   image = "/images/hero.svg"
 
     [params.hero.button]
     enable = true
     name = "Resume"
-    url = "#"
+    url = "/assets/resume_jonathan_levy.pdf"
     download = true
     newPage = false
 
 [[params.hero.socialLinks.fontAwesomeIcons]]
 icon = "fab fa-github"
-url = "https://example.com"
+url = "https://github.com/j-levy"
+
+[[params.hero.socialLinks.fontAwesomeIcons]]
+icon = "fab fa-github-alt"
+url = "https://github.com/yattoz"
 
 [[params.hero.socialLinks.fontAwesomeIcons]]
 icon = "fab fa-twitter"
-url = "https://example.com"
+url = "https://twitter.com/yattoz"
 
-[[params.hero.socialLinks.customIcons]]
-icon = "/fav.png"
-url = "https://example.com"
+# [[params.hero.socialLinks.customIcons]]
+# icon = "/fav.png"
+# url = "https://example.com"
 
   [params.about]
   enable = true
   title = "About Me"
   image = "/images/me.png"
   content = """
-I am a software developer with a passion for web development. I have a background in computer science and mathematics, and I have a strong interest in the intersection of technology and art. I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. 
+I am a French software developer with a main focus on relatively low-level programming. My background is a mix of computer engineering, computer science and mechatronics, with a hint of science teaching. My last research project revolved around possibilities of 3rd generation DNA sequences alignment using GPUs as Osaka University (Japan).
 
-I am currently working on a project that will be used to help people find the best way to get around the city."""
+With a knack for multiculturalism and travel, I had the opportunity to study in France, the Netherlands and Japan, this last being where I currently live. Be it for programming or for speaking, I don't hesitate to try another language.
 
+I am currently open for hire.
+
+"""
     [params.about.skills]
     enable = true
-    title = "Here are a few technologies I've been working with recently:"
-    items = [ "HTML", "CSS", "JavaScript", "React", "Node", "Express" ]
+    title = "Here are a few technologies I'm quite at ease working with:"
+    items = [ "C++", "CUDA", "Qt5 & GUI", "HTML/CSS/JS", "Python", "Git" ]
 
   [params.experience]
   enable = true
 
     [[params.experience.items]]
-    job = "Senior Software Developer"
-    company = "Facebook"
-    companyUrl = "https://example.com"
-    date = "Jan 2022 - present"
-    content = "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+    job = "Software Engineer"
+    company = "Inria"
+    companyUrl = "https://www.inria.fr"
+    date = "Dec 2019 - Feb 2021"
+    content = "In the engineering team of the public research laboratory Inria, I contributed to desktop applications for scientific research, like GNOMON (plant growth simulation) or sw2d (chemical dispersion in shallow waters). This involved scientific simulation with C++ and Python, 3D visualization with VTK and GUI with Qt5."
 
       [params.experience.items.featuredLink]
       enable = true
-      name = "View the project"
-      url = "https://example.com"
+      name = "My activity on Inria GitLab"
+      url = "https://gitlab.inria.fr/users/jolevy/activity"
 
-    [[params.experience.items]]
-    job = "Software Developer"
-    company = "Amazon"
-    companyUrl = "https://example.com"
-    date = "Sep 2020 - Dec 2021"
-    content = """
-I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-- Lead backend developer for a product.
-- Created a frontend design for a product.
-"""
-
-      [params.experience.items.featuredLink]
-      enable = true
-      url = "https://example.com"
-
-      [params.experience.items.info]
-      enable = true
-      content = "I worked as a software developer for more than one year in Amazon."
-
-    [[params.experience.items]]
-    job = "Junior Software Developer"
-    company = "Apple"
-    companyUrl = "https://example.com"
-    date = "Jan 2020 - Aug 2020"
-    content = """
-I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-- Lead backend developer for a product.
-- Created a frontend design for a product.
-"""
-
-      [params.experience.items.info]
-      enable = false
-
-      [params.experience.items.featuredLink]
-      enable = true
-      url = "https://example.com"
-
-    [[params.experience.items]]
-    job = "UI/UX Designer"
-    company = "Netflix"
-    companyUrl = "https://example.com"
-    date = "June 2017 - Nov 2019"
-    content = """
-I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-- Lead backend developer for a product.
-- Created a frontend design for a product.
-"""
-
-      [params.experience.items.featuredLink]
-      enable = true
-      url = "https://example.com"
-
-    [[params.experience.items]]
-    job = "Product Designer"
-    company = "Google"
-    companyUrl = "https://example.com"
-    date = "Feb 2016 - Mar 2017"
-    content = "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
 
   [params.education]
   enable = true
   index = false
 
     [[params.education.items]]
-    title = "Master of Business Administration"
-    date = "2013 - 2015"
-    GPA = "3.8 out of 5.0"
+    title = "Research Student - High-Performance Computing"
+    date = "Sep 2021 - Mar 2023"
+    GPA = "Non-graded"
     content = """
-Extracurricular Activities
-  - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-  - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique."""
+- Researched on long-reads DNA alignment with GPUs
+- Learned Japanese
+- Considered Ph.D position but didn't like it
+  """
 
       [params.education.items.school]
-      name = "University of California, Berkeley"
-      url = "https://example.org"
+      name = "Osaka University (Japan)"
+      url = "https://www.osaka-u.ac.jp/en"
 
     [[params.education.items]]
-    title = "Bachelor of Science in Computer Science"
-    date = "2009 - 2013"
-    GPA = "3.9 out of 5.0"
+    title = "Master of Science - Embedded Systems"
+    date = "2017 - 2019"
+    GPA = "7.6 out of 10"
     content = """
-I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
-- [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
-- Face mask detection using a single convolutional neural network.
+Academia:
+- Courses on computer architecture, software engineering & architecture
+- Master Thesis on acceleration of DNA seed extension for the BWA-MEM DNA aligner using GPUs
 
 Extracurricular Activities
-  - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-  - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique."""
+  - Member of Delft E-Sports Association
+  - Podcast production"""
 
       [params.education.items.school]
-      name = "Massachusetts Institute of Technology"
-      url = "https://example.org"
+      name = "Delft University of Technology (Netherlands)"
+      url = "https://www.tudelft.nl/en/"
 
       [params.education.items.featuredLink]
       enable = true
-      name = "My academic record"
-      url = "https://example.com"
+      name = "My master thesis"
+      url = "https://repository.tudelft.nl/islandora/object/uuid%3Abd22471f-058a-4071-95bb-5126e263124b"
 
     [[params.education.items]]
-    title = "High School"
-    GPA = "4.2 out of 5.0"
+    title = "Master of Science Teaching - Mechatronics"
+    date = "2014 - 2017"
+    GPA = "7.5 out of 10"
+    content = """
+- Double-BSc obtained with University of Rennes 1
+  * Mechanical Engineering: structure engineering, beam theory, thermodynamics
+  * Electrical Engineering: power electronics, networking, antennas science
+  * Multiphysics simulation and 3D modeling
+- Master degree for teaching from ENS Rennes
+- Passed *Agrégation*, the certification for teachers in France
+"""
 
       [params.education.items.school]
-      name = "Thomas Jefferson High School for Science and Technology."
-      url = "https://example.org"
+      name = "Ecole Normale Supérieure de Rennes (France)"
+      url = "https://international.ens-rennes.fr/"
 
       [params.education.items.featuredLink]
       enable = true
+      name = "check this out"
       url = "https://example.com"
 
-  [params.achievements]
-  enable = true
-
-    [[params.achievements.items]]
-    title = "Google kickstart runner"
-    content = "I solved all problems with optimal solution."
-    url = "https://example.com"
-
-    [[params.achievements.items]]
-    title = "Facebook Hackathon Winner"
-    content = "Developed a product using Artificial Intelligence."
-
-    [[params.achievements.items]]
-    title = "Hugo Profile"
-    content = "Developed a theme and getting 1K+ downloads per month."
-    url = "https://github.com/gurusabarish/hugo-profile"
-
-    [[params.achievements.items]]
-    title = "Microsoft Imagine Runner"
-    content = "We are developed a product which can help others."
-
-    [[params.achievements.items]]
-    title = "Google Summer of Code"
-    content = "Contributed to a open source project."
-    url = "https://example.com"
 
   [params.projects]
   enable = true
@@ -299,6 +231,33 @@ Extracurricular Activities
       [[params.projects.items.links]]
       icon = "fab fa-github"
       url = "https://github.com/gurusabarish/HugoProfileV2"
+
+  [params.achievements]
+  enable = true
+
+    [[params.achievements.items]]
+    title = "Google kickstart runner"
+    content = "I solved all problems with optimal solution."
+    url = "https://example.com"
+
+    [[params.achievements.items]]
+    title = "Facebook Hackathon Winner"
+    content = "Developed a product using Artificial Intelligence."
+
+    [[params.achievements.items]]
+    title = "Hugo Profile"
+    content = "Developed a theme and getting 1K+ downloads per month."
+    url = "https://github.com/gurusabarish/hugo-profile"
+
+    [[params.achievements.items]]
+    title = "Microsoft Imagine Runner"
+    content = "We are developed a product which can help others."
+
+    [[params.achievements.items]]
+    title = "Google Summer of Code"
+    content = "Contributed to a open source project."
+    url = "https://example.com"
+
 
   [params.contact]
   enable = true
