@@ -1,6 +1,6 @@
 baseURL = "https://j-levy.github.io/"
 languageCode = "en-us"
-title = "Hugo Profile"
+title = "Jonathan LEVY"
 theme = "hugo-profile"
 Paginate = 3
 enableRobotsTXT = true
