@@ -56,9 +56,9 @@ animate = true
   enable = true
   intro = "Hi, my name is"
   title = "Jonathan LEVY."
-  subtitle = "I develop software. Maybe for you?"
+  subtitle = """I develop software. Maybe for you?"""
   content = "Whether it's working on desktop programs, high-performance computing software or just a website, when I'd like something to exist, I may end up doing it myself. " # Mainly versed in C++, CUDA and Python with a touch of Qt5.
-  #image =  # could be an SVG like "/images/hero.svg"
+  # image = "/images/hero-night-city.jpg"  # could be an SVG like "/images/hero.svg"
 
     [params.hero.button]
     enable = true
@@ -201,7 +201,8 @@ Extracurricular Activities
 
     [[params.projects.items]]
     title = "Website: Calvinball Consortium"
-    content = "Website and code for podcast presentation, upload and management for the Calvinball Consortium Podcast Network."
+    content = "Website and code for podcasts presentation for the Calvinball Consortium Podcast Network, along with various services (file hosting, voice chat server, user management with Cockpit)"
+
     image = "/images/projects/calvinball1.jpg"
     badges = [ "Hugo", "Ruby", "Javascript" ]
 
@@ -280,8 +281,8 @@ Extracurricular Activities
 
   [params.contact]
   enable = false
-  content = "My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!"
-  email = "gurusabarisha@gmail.com"
+  content = "Whether you have a question or just want to say hi, I’ll try my best to get back to you!"
+  email = ""
   btnName = "Mail me"
 
 [params.footer.recentPosts]
@@ -293,7 +294,7 @@ disableFeaturedImage = false
 
 [params.footer.socialNetworks]
 github = "https://github.com/j-levy"
-linkedin = "https://www.linkedin.com/in/jonathan-levy-867857254/"
+linkedin = "https://www.linkedin.com/in/jonathan-levy-867857254/?locale=en_US"
 # twitter = "https://twitter.com"
 # instagram = "https://instagram.com"
 # facebook = "https://facebook.com"
