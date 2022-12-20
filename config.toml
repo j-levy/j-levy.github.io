@@ -123,12 +123,12 @@ I am currently open for hire (and ready to move too!)
     companyUrl = "https://www.cirad.fr"
     date = "Jun 2021 - Aug 2021"
     period = "(3 months)"
-    content = "During my short period at CIRAD I laid down the foundation for a 3D mesh catalogue for the Lindenmayer Systems software *lpy*. This software is used in research and academia to describing plant cells growth."
+    content = "During my short period at CIRAD I helped defining the requirements for a 3D mesh catalogue for the Lindenmayer Systems software *lpy*. This software is used in research and academia to describing plant cells growth."
 
       [params.experience.items.featuredLink]
       enable = true
-      name = "See activity on GitHub"
-      url = "https://github.com/fredboudon/lpy/commits/develop?author=j-levy"
+      name = "See on GitHub"
+      url = "https://github.com/fredboudon/lpy/"
 
 
 
@@ -141,9 +141,9 @@ I am currently open for hire (and ready to move too!)
     date = "Sep 2021 - Mar 2023"
     GPA = "Non-graded"
     content = """
-- Researched on long-reads DNA alignment with GPUs
-- Learned Japanese
-- Considered Ph.D position but stepped down
+- Research on long-reads DNA alignment with GPUs
+- Japanese language practice
+- Considered Ph.D position but finally not interested
   """
 
       [params.education.items.school]
@@ -156,7 +156,8 @@ I am currently open for hire (and ready to move too!)
     GPA = "7.6 out of 10"
     content = """
 Academia:
-- Courses on computer architecture, software engineering & architecture
+- Courses on computer architecture, software engineering, real-time embedded programming
+- Electives on crowd-sourced computing, software architecture, high-performance computing
 - Master Thesis on acceleration of DNA seed extension for the BWA-MEM DNA aligner using GPUs
 
 Extracurricular Activities
