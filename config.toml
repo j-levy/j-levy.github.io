@@ -49,7 +49,7 @@ animate = true
     disableExperience = false
     disableEducation = false
     disableProjects = false
-    disableAchievements = false
+    disableAchievements = true
     disableContact = true
 
   [params.hero]
@@ -57,8 +57,8 @@ animate = true
   intro = "Hi, my name is"
   title = "Jonathan LEVY."
   subtitle = "I develop software. Maybe for you?"
-  content = "Whether it's working on desktop programs, Android app or website, when I'd like something to exist, I may end up making it myself. " # Mainly versed in C++, CUDA and Python with a touch of Qt5.
-  image = "/images/hero.svg"
+  content = "Whether it's working on desktop programs, high-performance computing software or just a website, when I'd like something to exist, I may end up doing it myself. " # Mainly versed in C++, CUDA and Python with a touch of Qt5.
+  #image =  # could be an SVG like "/images/hero.svg"
 
     [params.hero.button]
     enable = true
@@ -76,8 +76,8 @@ icon = "fab fa-github-alt"
 url = "https://github.com/yattoz"
 
 [[params.hero.socialLinks.fontAwesomeIcons]]
-icon = "fab fa-twitter"
-url = "https://twitter.com/yattoz"
+icon = "fab fa-mastodon"
+url = "https://piaille.fr/@lejo"
 
 # [[params.hero.socialLinks.customIcons]]
 # icon = "/fav.png"
@@ -92,7 +92,7 @@ I am a French software developer, I like both low-level programming involving me
 
 With a knack for multiculturalism and travel, I had the opportunity to study in France, the Netherlands and Japan, this last being where I currently live. I am finishing a 18-month period as Research Student at Osaka University where I studied possibilities of GPU acceleration for 3rd-generation DNA sequences alignment.
 
-I am currently open for hire (and ready to move out!)
+I am currently open for hire (and ready to move too!)
 
 """
     [params.about.skills]
@@ -234,7 +234,7 @@ Extracurricular Activities
 
     [[params.projects.items]]
     title = "Podcast Recommandé"
-    content = "A podcast to discover music following YouTube recommendations (in French). 65 episodes in Dec. 2022 and counting!"
+    content = "A podcast to discover music following YouTube recommendations (in French). 65 episodes in Dec. 2022 and counting! (every 2 weeks)"
     image = "/images/projects/recommande1.jpg"
     badges = [ "Music", "DAW", "Podcast" ]
 
@@ -297,6 +297,6 @@ linkedin = "https://www.linkedin.com/in/jonathan-levy-867857254/"
 # twitter = "https://twitter.com"
 # instagram = "https://instagram.com"
 # facebook = "https://facebook.com"
-
+mastodon = "https://piaille.fr/@lejo"
   [params.listPages]
   disableFeaturedImage = false
