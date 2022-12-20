@@ -42,7 +42,7 @@ animate = true
   [params.navbar]
   align = "ms-auto"
   brandName = "Jonathan LEVY"
-  disableSearch = false
+  disableSearch = true
 
     [params.navbar.menus]
     disableAbout = false
