@@ -4,7 +4,7 @@ title = "Jonathan LEVY"
 theme = "hugo-profile"
 Paginate = 3
 enableRobotsTXT = true
-staticDir = [ "static/", "themes/hugo-profile/static/"]
+staticDir = [ "themes/hugo-profile/static/", "static/"]
 [outputs]
 home = [ "HTML", "RSS", "JSON" ]
 page = [ "HTML", "RSS" ]
@@ -58,7 +58,7 @@ animate = true
   title = "Jonathan LEVY."
   subtitle = """I develop software. Maybe for you?"""
   content = "Whether it's working on desktop programs, high-performance computing software or just a website, when I'd like something to exist, I may end up doing it myself. " # Mainly versed in C++, CUDA and Python with a touch of Qt5.
-  # image = "/images/hero-night-city.jpg"  # could be an SVG like "/images/hero.svg"
+  image = "/images/hero-hinotou.jpg"  # could be an SVG like "/images/hero.svg"
 
     [params.hero.button]
     enable = true
