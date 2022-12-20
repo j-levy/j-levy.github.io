@@ -197,6 +197,7 @@ Extracurricular Activities
 
   [params.projects]
   enable = true
+  title = "Hobby projects"
 
     [[params.projects.items]]
     title = "Website: Calvinball Consortium"
@@ -208,9 +209,9 @@ Extracurricular Activities
       name = "See website"
       link = "https://www.calvinballconsortium.fr"
 
-      [[params.projects.items.links]]
-      icon = "fa fa-envelope"
-      url = "mailto:?subject=Calvinball%20Consortium%20Website"
+      # [[params.projects.items.links]]
+      # icon = "fa fa-envelope"
+      # url = "mailto:?subject=Calvinball%20Consortium%20Website"
 
       [[params.projects.items.links]]
       icon = "fab fa-github"
@@ -224,7 +225,7 @@ Extracurricular Activities
     badges = [ "Android", "Kotlin" ]
 
       [params.projects.items.featured]
-      name = "On Google Play"
+      name = "Google Play"
       link = "https://play.google.com/store/apps/details?id=fr.forum_thalie.tsumugi"
 
       [[params.projects.items.links]]
@@ -235,10 +236,10 @@ Extracurricular Activities
     title = "Podcast Recommandé"
     content = "A podcast to discover music following YouTube recommendations (in French). 65 episodes in Dec. 2022 and counting!"
     image = "/images/projects/recommande1.jpg"
-    badges = [ "Music", "DAW", "podcast" ]
+    badges = [ "Music", "DAW", "Podcast" ]
 
       [params.projects.items.featured]
-      name = "See latest episodes"
+      name = "Latest episodes"
       link = "https://www.calvinballconsortium.fr/podcasts/recommande"
 
       [[params.projects.items.links]]
