@@ -106,9 +106,7 @@ With a knack for multiculturalism and travel, I had the opportunity to study in 
     companyUrl = "https://www.qualcomm.com"
     date = "Jun. 2023 - Now"
     period =  "(1+ year)"
-    content = """
-    I am currently working at Qualcomm Technologies in the DirectX 12 Driver team for the Adreno GPU. We are focusing on the latest DirectX 12.2 features support for the Windows on Snapdragon laptops, and I am working on *raytracing support for the Adreno GPU series on Windows*. This includes debugging the Windows driver for DirectX 12, implementing features, and developing DirectX applications for tests.
-    """
+    content = "I am currently working at Qualcomm Technologies in the DirectX 12 Driver team for the Adreno GPU. We are focusing on the latest DirectX 12.2 features support for the Windows on Snapdragon laptops, and I am working on *raytracing support for the Adreno GPU series on Windows*. This includes debugging the Windows driver for DirectX 12, implementing features, and developing DirectX applications for tests."
 
     [[params.experience.items]]
     job = "R&D Software Engineer"
@@ -116,11 +114,7 @@ With a knack for multiculturalism and travel, I had the opportunity to study in 
     companyUrl = "https://www.inria.fr"
     date = "Dec. 2019 - Aug. 2021"
     period =  "(1.5 year)"
-    content = """
-    In the engineering team of the French public research laboratory Inria, I contributed to desktop applications for research, like *GNOMON* (plant growth simulation) and *sw2d* (chemical dispersion in shallow waters). This involved scientific simulation with C++ and Python, 3D visualization with VTK and GUI with Qt5.
-    
-    In partnership with Inria, I also worked at CIRAD, where I helped defining the requirements for a 3D mesh catalogue for the Lindenmayer Systems software *lpy*. This software is used in research and academia to describing plant cells growth.
-    """
+    content = "In the engineering team of the French public research laboratory Inria, I contributed to desktop applications for research, like *GNOMON* (plant growth simulation) and *sw2d* (chemical dispersion in shallow waters). This involved scientific simulation with C++ and Python, 3D visualization with VTK and GUI with Qt5. In partnership with Inria, I also worked at CIRAD, where I helped defining the requirements for a 3D mesh catalogue for the Lindenmayer Systems software *lpy*. This software is used in research and academia to describing plant cells growth."
 
       [params.experience.items.featuredLink]
       enable = true
