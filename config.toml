@@ -91,23 +91,24 @@ url = "https://piaille.fr/@lejo"
 I am a French software developer, I like both low-level programming involving memory management or thread concurrency, and implementing graphical interfaces. My background is a mix of computer engineering, computer science and mechatronics, with a hint of science teaching. 
 
 With a knack for multiculturalism and travel, I had the opportunity to study in France, the Netherlands and Japan, first in mechatronics engineering, then in Computer Science and high-performance computing with GPUs. Today, I work at Qualcomm Technologies (Cork, Ireland) on DirectX 12 driver and in particular raytracing support, for the latest generation of Adreno GPUs.
-
 """
     [params.about.skills]
     enable = true
     title = "Here are a few technologies I recently worked with:"
-    items = [ "C++", "CUDA", "DirectX and Graphics", "Linux & Windows", "Python", "Git" ]
+    items = [ "C++", "CUDA", "DirectX 12", "Linux & Windows", "Python", "Git" ]
 
   [params.experience]
   enable = true
 
     [[params.experience.items]]
-    job = "Software Engineer"
-    company = "Inria"
-    companyUrl = "https://www.inria.fr"
-    date = "Dec 2019 - Feb 2021"
+    job = "Software Engineer - Graphics"
+    company = "Qualcomm Technologies"
+    companyUrl = "https://www.qualcomm.com"
+    date = "Jun. 2023 - Now"
     period =  "(1+ year)"
-    content = "In the engineering team of the public research laboratory Inria, I contributed to desktop applications for research, like *GNOMON* (plant growth simulation) and *sw2d* (chemical dispersion in shallow waters). This involved scientific simulation with C++ and Python, 3D visualization with VTK and GUI with Qt5."
+    content = """
+    I am currently working at Qualcomm Technologies in the DirectX 12 Driver team for the Adreno GPU. We are focusing on the latest DirectX 12.2 features support for the Windows on Snapdragon laptops, and I am working on *raytracing support for the Adreno GPU series on Windows*. This includes debugging the Windows driver for DirectX 12, implementing features, and developing DirectX applications for tests.
+    """
 
     [[params.experience.items]]
     job = "R&D Software Engineer"
@@ -116,7 +117,7 @@ With a knack for multiculturalism and travel, I had the opportunity to study in 
     date = "Dec. 2019 - Aug. 2021"
     period =  "(1.5 year)"
     content = """
-    In the engineering team of the public research laboratory Inria, I contributed to desktop applications for research, like *GNOMON* (plant growth simulation) and *sw2d* (chemical dispersion in shallow waters). This involved scientific simulation with C++ and Python, 3D visualization with VTK and GUI with Qt5.
+    In the engineering team of the French public research laboratory Inria, I contributed to desktop applications for research, like *GNOMON* (plant growth simulation) and *sw2d* (chemical dispersion in shallow waters). This involved scientific simulation with C++ and Python, 3D visualization with VTK and GUI with Qt5.
     
     In partnership with Inria, I also worked at CIRAD, where I helped defining the requirements for a 3D mesh catalogue for the Lindenmayer Systems software *lpy*. This software is used in research and academia to describing plant cells growth.
     """
@@ -210,9 +211,9 @@ Extracurricular Activities
 
 
     [[params.projects.items]]
-    title = "Android app: Tsumugi Webradio"
+    title = "Android app: R/a/dio"
     content = "An Android app to listen to the webradio R/a/dio, packed with features: sleep, alarm, song request & favorites, previous and next queued songs."
-    image = "/images/projects/radio2.png"
+    image = "/images/projects/radio2.jpg"
     badges = [ "Android", "Kotlin", "Google Play Store" ]
 
       [params.projects.items.featured]
