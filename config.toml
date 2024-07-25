@@ -90,19 +90,16 @@ url = "https://piaille.fr/@lejo"
   content = """
 I am a French software developer, I like both low-level programming involving memory management or thread concurrency, and implementing graphical interfaces. My background is a mix of computer engineering, computer science and mechatronics, with a hint of science teaching. 
 
-With a knack for multiculturalism and travel, I had the opportunity to study in France, the Netherlands and Japan, this last being where I currently live. I am finishing a 18-month period as Research Student at Osaka University where I studied possibilities of GPU acceleration for 3rd-generation DNA sequences alignment.
-
-I am currently open for hire (and ready to move too!)
+With a knack for multiculturalism and travel, I had the opportunity to study in France, the Netherlands and Japan, first in mechatronics engineering, then in Computer Science and high-performance computing with GPUs. Today, I work at Qualcomm Technologies (Cork, Ireland) on DirectX 12 driver and in particular raytracing support, for the latest generation of Adreno GPUs.
 
 """
     [params.about.skills]
     enable = true
     title = "Here are a few technologies I recently worked with:"
-    items = [ "C++", "CUDA", "Qt5 & GUI", "HTML/CSS/JS", "Python", "Git" ]
+    items = [ "C++", "CUDA", "DirectX and Graphics", "Linux & Windows", "Python", "Git" ]
 
   [params.experience]
   enable = true
-
 
     [[params.experience.items]]
     job = "Software Engineer"
@@ -112,24 +109,22 @@ I am currently open for hire (and ready to move too!)
     period =  "(1+ year)"
     content = "In the engineering team of the public research laboratory Inria, I contributed to desktop applications for research, like *GNOMON* (plant growth simulation) and *sw2d* (chemical dispersion in shallow waters). This involved scientific simulation with C++ and Python, 3D visualization with VTK and GUI with Qt5."
 
+    [[params.experience.items]]
+    job = "R&D Software Engineer"
+    company = "Inria"
+    companyUrl = "https://www.inria.fr"
+    date = "Dec. 2019 - Aug. 2021"
+    period =  "(1.5 year)"
+    content = """
+    In the engineering team of the public research laboratory Inria, I contributed to desktop applications for research, like *GNOMON* (plant growth simulation) and *sw2d* (chemical dispersion in shallow waters). This involved scientific simulation with C++ and Python, 3D visualization with VTK and GUI with Qt5.
+    
+    In partnership with Inria, I also worked at CIRAD, where I helped defining the requirements for a 3D mesh catalogue for the Lindenmayer Systems software *lpy*. This software is used in research and academia to describing plant cells growth.
+    """
+
       [params.experience.items.featuredLink]
       enable = true
       name = "See activity on Inria's GitLab"
       url = "https://gitlab.inria.fr/users/jolevy/activity"
-
-      [[params.experience.items]]
-    job = "Software Engineer"
-    company = "CIRAD"
-    companyUrl = "https://www.cirad.fr"
-    date = "Jun 2021 - Aug 2021"
-    period = "(3 months)"
-    content = "During my short period at CIRAD I helped defining the requirements for a 3D mesh catalogue for the Lindenmayer Systems software *lpy*. This software is used in research and academia to describing plant cells growth."
-
-      [params.experience.items.featuredLink]
-      enable = true
-      name = "See on GitHub"
-      url = "https://github.com/fredboudon/lpy/"
-
 
 
   [params.education]
@@ -143,7 +138,7 @@ I am currently open for hire (and ready to move too!)
     content = """
 - Research on long-reads DNA alignment with GPUs
 - Japanese language practice
-- Considered Ph.D position but finally not interested
+- Considered Ph.D but finally not interested
   """
 
       [params.education.items.school]
@@ -190,12 +185,6 @@ Extracurricular Activities
       name = "Ecole Normale Supérieure de Rennes (France)"
       url = "https://international.ens-rennes.fr/"
 
-      [params.education.items.featuredLink]
-      enable = true
-      name = "check this out"
-      url = "https://example.com"
-
-
   [params.projects]
   enable = true
   title = "Hobby projects"
@@ -205,7 +194,7 @@ Extracurricular Activities
     content = "Website and code for podcasts presentation for the Calvinball Consortium Podcast Network, along with various services (file hosting, voice chat server, user management with Cockpit)"
 
     image = "/images/projects/calvinball1.jpg"
-    badges = [ "Hugo", "Ruby", "Javascript" ]
+    badges = [ "Hugo", "Ruby", "Javascript", "Linux server", "Ansible" ]
 
       [params.projects.items.featured]
       name = "See website"
@@ -222,21 +211,21 @@ Extracurricular Activities
 
     [[params.projects.items]]
     title = "Android app: Tsumugi Webradio"
-    content = "An Android app to listen to the webradio Tsumugi, with convenient features: sleep, alarm, last played, news from the blog."
-    image = "/images/projects/tsumugi.jpg"
-    badges = [ "Android", "Kotlin" ]
+    content = "An Android app to listen to the webradio R/a/dio, packed with features: sleep, alarm, song request & favorites, previous and next queued songs."
+    image = "/images/projects/radio2.png"
+    badges = [ "Android", "Kotlin", "Google Play Store" ]
 
       [params.projects.items.featured]
       name = "Google Play"
-      link = "https://play.google.com/store/apps/details?id=fr.forum_thalie.tsumugi"
+      link = "https://play.google.com/store/apps/details?id=io.r_a_d.radio2"
 
       [[params.projects.items.links]]
       icon = "fab fa-github"
-      url = "https://github.com/yattoz/webradio-app"
+      url = "https://github.com/yattoz/radio2"
 
     [[params.projects.items]]
     title = "Podcast Recommandé"
-    content = "A podcast to discover music following YouTube recommendations (in French). 65 episodes in Dec. 2022 and counting! (every 2 weeks)"
+    content = "A podcast to discover music following YouTube recommendations (in French). 80 episodes in 5 years."
     image = "/images/projects/recommande1.jpg"
     badges = [ "Music", "DAW", "Podcast" ]
 
@@ -299,6 +288,6 @@ linkedin = "https://www.linkedin.com/in/jonathan-levy-867857254/?locale=en_US"
 # twitter = "https://twitter.com"
 # instagram = "https://instagram.com"
 # facebook = "https://facebook.com"
-mastodon = "https://piaille.fr/@lejo"
+# mastodon = "https://piaille.fr/@lejo"
   [params.listPages]
   disableFeaturedImage = false
