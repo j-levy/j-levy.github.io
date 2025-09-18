@@ -75,9 +75,9 @@ url = "https://github.com/j-levy"
 icon = "fab fa-github-alt"
 url = "https://github.com/yattoz"
 
-[[params.hero.socialLinks.fontAwesomeIcons]]
-icon = "fab fa-mastodon"
-url = "https://piaille.fr/@lejo"
+# [[params.hero.socialLinks.fontAwesomeIcons]]
+# icon = "fab fa-mastodon"
+# url = "https://piaille.fr/@lejo"
 
 # [[params.hero.socialLinks.customIcons]]
 # icon = "/fav.png"
@@ -95,7 +95,7 @@ With a knack for multiculturalism and travel, I had the opportunity to study in 
     [params.about.skills]
     enable = true
     title = "Here are a few technologies I recently worked with:"
-    items = [ "C++", "CUDA", "DirectX 12", "Linux & Windows", "Python", "Git" ]
+    items = [ "C++", "Low-level", "DirectX 12", "Linux & Windows", "Python", "Git" ]
 
   [params.experience]
   enable = true
@@ -105,7 +105,7 @@ With a knack for multiculturalism and travel, I had the opportunity to study in 
     company = "Qualcomm Technologies"
     companyUrl = "https://www.qualcomm.com"
     date = "Jun. 2023 - Now"
-    period =  "(1+ year)"
+    period =  "(2+ year)"
     content = "I am currently working at Qualcomm Technologies in the DirectX 12 Driver team for the Adreno GPU. We are focusing on the latest DirectX 12.2 features support for the Windows on Snapdragon laptops, and I am working on *raytracing support for the Adreno GPU series on Windows*. This includes debugging the Windows driver for DirectX 12, implementing features, and developing DirectX applications for tests."
 
     [[params.experience.items]]
@@ -116,10 +116,10 @@ With a knack for multiculturalism and travel, I had the opportunity to study in 
     period =  "(1.5 year)"
     content = "In the engineering team of the French public research laboratory Inria, I contributed to desktop applications for research, like *GNOMON* (plant growth simulation) and *sw2d* (chemical dispersion in shallow waters). This involved scientific simulation with C++ and Python, 3D visualization with VTK and GUI with Qt5. In partnership with Inria, I also worked at CIRAD, where I helped defining the requirements for a 3D mesh catalogue for the Lindenmayer Systems software *lpy*. This software is used in research and academia to describing plant cells growth."
 
-      [params.experience.items.featuredLink]
-      enable = true
-      name = "See activity on Inria's GitLab"
-      url = "https://gitlab.inria.fr/users/jolevy/activity"
+      # [params.experience.items.featuredLink]
+      # enable = true
+      # name = "Inria GitLab"
+      # url = "https://gitlab.inria.fr/users/jolevy/activity"
 
 
   [params.education]
