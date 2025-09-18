@@ -2,7 +2,7 @@ baseURL = "https://j-levy.github.io/"
 languageCode = "en-us"
 title = "Jonathan LEVY"
 theme = "hugo-profile"
-Paginate = 3
+pagination.pagerSize = 3
 enableRobotsTXT = true
 staticDir = [ "themes/hugo-profile/static/", "static/"]
 [outputs]
