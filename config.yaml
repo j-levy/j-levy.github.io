@@ -19,217 +19,576 @@ languages:
           title: Blog posts
           url: /en/blogs_en
           weight: 1
-        - identifier: gallery
-          name: Gallery
-          title: Image gallery
-          url: /gallery
-          weight: 2
+    params:
+      # Hero
+      hero:
+        enable: true
+        intro: Hi, my name is
+        title: Jonathan Levy.
+        subtitle: >- 
+          Software Engineer,
+          Passionate about Japan.
+        content: >-
+          I work on all things programming: desktop software,
+          smartphone apps, high-performance GPU computin,
+          web and hosting. Also, I am a documentation maniac.
+        image: /images/photo.jpg
+        button:
+          enable: true
+          name: Resume
+          url: /assets/cv_en.pdf
+          download: true
+          newPage: false
+        socialLinks:
+          fontAwesomeIcons:
+            - icon: fab fa-github
+              url: https://github.com/yattoz
+            # - icon: fab fa-github
+            #          url: https://github.com/j-levy
+      
+        bottomImage:
+          enable: true
+          roundImage: true # Make hero image circular | default false
+
+      about:
+        enable: true
+        title: About Me
+        image: /images/hero-hinotou.jpg
+        content: >
+
+          I am a tri-lingual English, French, Japanese software engineer.
+
+          I studied computer science, computer science and mechatronics, science teaching. 
+
+          With a knack for multiculturalism and travel, I had the opportunity to
+          study in France, the Netherlands and Japan, first in mechatronics
+          engineering, then in Computer Science and high-performance computing with
+          GPUs. Today, I work at Qualcomm Technologies (Cork, Ireland).
+          Passionate about Japan since childhood, I'm also learning Japanese and particupated in Japanese-related projects: R/a/dio, AMV Céleste 2 and more. 
+        skills:
+          enable: true
+          title: 'A quick list of my core passions:'
+          items:
+            - C/C++, Python, Kotlin, all kind programming
+            - Documentation, Markdown, Confluence
+            - Project management, Agile, Git
+            - Linux & Windows programming
+            - Japanese language, animation
+            - Vocaloid, music, Cubase
+
+
+      # Experience
+      experience:
+        enable: true
+        # title: "Custom Name"
+        items:
+          - company: Qualcomm Technologies
+            companyUrl: https://www.qualcomm.com
+            jobs: 
+            - name: Software Engineer - Graphics
+              date: Jun. 2023 - Now
+              # featuredItems:
+              #  customIcons:
+              #    - icon: /images/qualcomm.png
+              #      url: "https://www.qualcomm.com"
+                    # tooltip: Example tooltip content
+              period: (3 years)
+              info:
+                  content: Working as a senior software developer
+              content: >-
+                I am working on the DirectX 12 User-Mode Driver for DX12.2 features for Windows on Snapdragon laptops.
+                On *raytracing support for the Adreno GPU series on Windows*, I mainly work on debugging the Windows driver for DirectX 12,
+                implementing features, and developing DirectX applications for tests.
+              
+          - company: Inria
+            companyUrl: https://www.inria.fr
+            jobs:
+            - name: R&D Software Engineer
+              date: Dec. 2019 - Aug. 2021
+              period: (1.5 year)
+              #featuredItems:
+              #  customIcons:
+              #    - icon: /images/inria.jpg
+              #      url: "https://www.inria.fr"
+                    # tooltip: Example tooltip content
+              content: >-
+                In the engineering team of the French public research laboratory
+                Inria, I contributed to desktop applications for research, like
+                *GNOMON* (plant growth simulation) and *sw2d* (chemical dispersion in
+                shallow waters).
+                This involved scientific simulation with C++ and
+                Python, 3D visualization with VTK and GUI with Qt5. In partnership
+                with Inria, I also worked at CIRAD, where I helped defining the
+                requirements for a 3D mesh catalogue for the Lindenmayer Systems
+                software *lpy*. This software is used in research and academia to
+                describing plant cells growth.
+
+      # Education
+      education:
+        enable: true
+        index: false
+        items:
+          - title: Research Student - High-Performance Computing
+            date: 2021 - 2023
+            # GPA: Non-graded
+            content: |-
+              - Research on long-reads DNA alignment with GPUs
+              - Japanese language practice
+              - Ph.D track
+            school:
+              name: Osaka University (Japan)
+              url: https://www.osaka-u.ac.jp/en
+
+          - title: Master of Science - Embedded Systems
+            date: 2017 - 2019
+            GPA: 7.6 out of 10
+            content: >-
+              Academia:
+
+              - Courses on computer architecture, software engineering, real-time
+              embedded programming
+
+              - Electives on crowd-sourced computing, software architecture,
+              high-performance computing
+
+              - Master Thesis on acceleration of DNA seed extension for the BWA-MEM
+              DNA aligner using GPUs
+
+
+              Extracurricular Activities
+                - Member of Delft E-Sports Association
+                - Podcast production
+            school:
+              name: Delft University of Technology (Netherlands)
+              url: https://www.tudelft.nl/en/
+            featuredLink:
+              enable: true
+              name: My master thesis
+              url: >-
+                https://repository.tudelft.nl/islandora/object/uuid%3Abd22471f-058a-4071-95bb-5126e263124b
+
+          - title: Master of Science Teaching - Mechatronics
+            date: 2014 - 2017
+            GPA: 7.5 out of 10
+            content: |
+              - Double-BSc obtained with University of Rennes 1
+                * Mechanical Engineering: structure engineering, beam theory, thermodynamics
+                * Electrical Engineering: power electronics, networking, antennas science
+                * Multiphysics simulation and 3D modeling
+              - Master degree for teaching from ENS Rennes
+              - Passed *Agrégation*, the certification for teachers in France
+            school:
+              name: Ecole Normale Supérieure de Rennes (France)
+              url: https://international.ens-rennes.fr/
+            featuredLink:
+              enabled: true
+              name: Research - Application to Throwing (MIG 2015)
+              url: >-
+                https://inria.hal.science/hal-01205162v1/file/CruzRuizetal_MIG2015_FINAL.pdf
+
+
+      # Achievements
+      achievements:
+        enable: true
+        # title: "Custom Name"
+        items:
+          - title: MEXT Scholarship 2020
+            content: I earned the Monbunkagakusho Scholarship from the Japan’s Ministry of Education, Culture, Sports, Science and Technology.
+            # url: https://www.mext.go.jp/en/policy/education/highered/title02/detail02/sdetail02/1373897.htm
+            image: /images/mext.png
+          - title: Teaching exam awardee "Agrégation"
+            content: I passed the national competitive exam "Agrégation" to teach at Bachelor level in France.
+            # url: https://www.mext.go.jp/en/policy/education/highered/title02/detail02/sdetail02/1373897.htm
+            image: /images/ministere-education.png
+
+      # projects
+      projects:
+        enable: true
+        title: Projects
+        items:
+          - title: 'Website: Calvinball Consortium'
+            content: >-
+              Website and code for podcasts presentation for the Calvinball
+              Consortium Podcast Network, along with various services (file hosting,
+              voice chat server, user management with Cockpit)
+            image: /images/projects/calvinball1.jpg
+            badges:
+              - Hugo
+              - Ruby
+              - Javascript
+              - Linux server
+              - Ansible
+            featured:
+              name: See website
+              link: https://www.calvinballconsortium.fr
+            links:
+              - icon: fab fa-github
+                url: https://github.com/yattoz/calvinball-website
+          - title: 'Android app: R/a/dio'
+            content: >-
+              An Android app to listen to the webradio R/a/dio, packed with
+              features: sleep, alarm, song request & favorites, previous and next
+              queued songs.
+            image: /images/projects/radio2.jpg
+            badges:
+              - Android
+              - Kotlin
+              - Google Play Store
+            featured:
+              name: Google Play
+              link: https://play.google.com/store/apps/details?id=io.r_a_d.radio2
+            links:
+              - icon: fab fa-github
+                url: https://github.com/yattoz/radio2
+          - title: Podcast Recommandé
+            content: >-
+              A podcast to discover music following YouTube recommendations (in
+              French). 80 episodes in 5 years.
+            image: /images/projects/recommande1.jpg
+            badges:
+              - Music
+              - DAW
+              - Podcast
+            featured:
+              name: Latest episodes
+              link: https://www.calvinballconsortium.fr/podcasts/recommande
+            links:
+              - icon: fab fa-spotify
+                url: https://open.spotify.com/show/4EtqYwTwE3Z138ST2C3cEz
+              - icon: fab fa-twitter
+                url: https://twitter.com/recommande0
+          - title: Calvinball Bonus
+            content: >-
+              Series of musical montages as bonus for the podcast Calvinball.
+            image: /images/projects/calvinball.png
+            badges:
+              - Music
+              - DAW
+              - Podcast
+            featured:
+              name: Listen on Youtube
+              link: https://www.youtube.com/@CalvinballBonus
+            links:
+              - icon: fab fa-youtube
+                url: https://www.youtube.com/@CalvinballBonus
+          - title: AMV Céleste 2
+            content: >-
+              Video montage with Da Vinci Resolve for the anime-zapping project AMV Céleste 2.
+            image: /images/projects/amv-celeste-2.png
+            badges:
+              - Video Editing
+              - Da Vinci Resolve
+              - Japanese
+            featured:
+              name: Watch on Youtube
+              link: https://www.youtube.com/watch?v=4gTwaTeUzjU
+            links:
+              - icon: fab fa-youtube
+                url: https://www.youtube.com/watch?v=4gTwaTeUzjU
+
+        #Contact
+        contact:
+          enable: true
+          # title: "Custom Name"
+          content: >-
+            Whether you have a question or just want to say hi, I’ll get back to you!
+          email: 'levyjo963@gmail.com'
+          btnName: Mail me
+          # formspree:
+          #   enable: true # `contact.email` value will be ignored
+          #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+          #   emailCaption: "Enter your email address"
+          #   messageCaption: "Enter your message here"
+          #   messageRows: 5
   fr:
-    contentDir: "content/fr"
     languageName: "Français"
-    weight: 3
+    weight: 1
+    contentDir: "content/fr"
     menu:
       main:
         - identifier: blog
           name: Blog
-          title: Articles de blog
+          title: Blog posts
           url: /fr/blogs_fr
           weight: 1
-        - identifier: gallery
-          name: Galerie
-          title: Galerie d'images
-          url: /fr/gallery
-          weight: 2
     params:
+      # Hero
       hero:
-        intro: "Bonjour, je m'appelle"
-        title: "Isabella."
-        subtitle: "Je construis des choses pour le web"
-        content: "Une développeuse passionnée d'applications web. J'ai tendance à utiliser des technologies web modernes pour créer des sites web qui ont fière allure, qui sont agréables et qui fonctionnent correctement."
+        enable: true
+        intro: Bonjour, je m'appelle
+        title: Jonathan Levy.
+        subtitle: >- 
+          Ingénieur logiciel,
+          passionné du Japon.
+        content: >-
+          Programmeur polyvalent : à la fois PC, API, appli de smartphone,
+          mais aussi calcul GPU hautes performances, web et hébergement.
+          Je suis un maniaque de la documentation.
+        image: /images/photo.jpg
         button:
-          name: "CV"
+          enable: true
+          name: Resume
+          url: /assets/cv_en.pdf
+          download: true
+          newPage: false
+        socialLinks:
+          fontAwesomeIcons:
+            - icon: fab fa-github
+              url: https://github.com/yattoz
+            # - icon: fab fa-github
+            #          url: https://github.com/j-levy
+      
+        bottomImage:
+          enable: true
+          roundImage: true # Make hero image circular | default false
+
       about:
-        title: "À Propos de Moi"
-        content: |-
-          Je suis une développeuse de logiciels passionnée par le développement web. J'ai une formation en informatique et en mathématiques, et je m'intéresse vivement à l'intersection de la technologie et de l'art. Je travaille actuellement comme développeuse de logiciels chez [exemple org.](https://example.com) à San Francisco, CA.
+        enable: true
+        title: About Me
+        image: /images/hero-hinotou.jpg
+        content: >
 
-          Je travaille actuellement sur un projet qui sera utilisé pour aider les gens à trouver le meilleur moyen de se déplacer dans la ville.
+          Je suis un ingénieur logiciel trilingue anglais-français-japonais.
+
+          Mon cursus universitaire comprend de la robotique, des systèmes embarqués, de l'informatique, et des sciences de l'éducation.
+
+          Féru de voyages et de multiculturalisme, j'ai eu la chance d'étudier et travailler en France, aux Pays-Bas, au Japon, et en Irlande.
+          Aujourd'hui, je suis employé chez Qualcomm où je travaille sur le driver DirectX 12 pour les ordinateurs Snapdragon X Elite.
+          Passionné de cultures japonaises depuis l'enfance, j'ai appris (et continue d'apprendre !) la langue japonaise et mes projets tournent
+          autour de cultures populaires: R/a/dio, AMV Céleste 2 et plus. 
         skills:
-          title: "Voici quelques technologies avec lesquelles j'ai travaillé récemment:"
+          enable: true
+          title: 'Quelques unes de mes passions:'
+          items:
+            - C/C++, Python, Kotlin
+            - Documentation, Markdown, Confluence
+            - Gestion de projet, Agile, Git
+            - Programmation Linux & Windows
+            - Langue japonaise, animation
+            - Musique Vocaloid, Cubase
+
+
+      # Experience
       experience:
+        enable: true
+        # title: "Custom Name"
         items:
-          - company: "Facebook"
-            companyUrl: "https://example.com"
+          - company: Qualcomm Technologies
+            companyUrl: https://www.qualcomm.com
+            jobs: 
+            - name: Ingénieur logiciel - GPU
+              date: Depuis juin 2023
+              # featuredItems:
+              #  customIcons:
+              #    - icon: /images/qualcomm.png
+              #      url: "https://www.qualcomm.com"
+                    # tooltip: Example tooltip content
+              period: (3 years)
+              info:
+                  content: Working as a senior software developer
+              content: >-
+                Je travaille sur le driver DIrectX 12 pour les ordinateurs Snapdragon X2 Elite, en particulier sur le 
+                support du ray-tracing pour le GPU Adreno pour Windows. Je corrige le driver pour qu'il soit en conformance
+                avec les jeux modernes, et j'implémente les fonctionnalités du futur.
+              
+          - company: Inria
+            companyUrl: https://www.inria.fr
             jobs:
-              - name: "Développeuse Senior de Logiciels"
-                date: "Jan 2023 - présent"
-                content: "Je travaille actuellement comme développeuse senior de logiciels chez [exemple org.](https://example.com) à San Francisco, CA. Je travaille sur un projet qui sera utilisé pour aider les gens à trouver le meilleur moyen de se déplacer dans la ville."
-                info:
-                  content: Travaille comme développeuse senior de logiciels
-                featuredItems:
-                  fontAwesomeIcons:
-                    - icon: fa-brands fa-react
-                      url: https://react.dev/
-                      tooltip: Exemple de contenu d'info-bulle
-                    - icon: fab fa-x-twitter
-                      url: https://example.com
-                  customIcons:
-                    - icon: /fav.png
-                      url: "https://example.com"
-                      tooltip: Exemple de contenu d'info-bulle
-              - name: "Développeuse de Logiciels"
-                date: "Jan 2022 - Déc 2023"
-                content: "J'ai travaillé comme développeuse de logiciels. J'ai travaillé sur un projet qui sera utilisé pour aider les gens à trouver le meilleur moyen de se déplacer dans la ville."
-          - company: "Amazon"
-            companyUrl: "https://example.com"
-            jobs:
-              - name: "Développeuse de Logiciels"
-                date: "Sep 2020 - Déc 2021"
-                info:
-                  content: J'ai travaillé comme développeuse de logiciels pendant plus d'un an chez Amazon.
-                content: |
-                  Je travaille actuellement comme développeuse de logiciels chez [exemple org.](https://example.com) à San Francisco, CA. Je travaille sur un projet qui sera utilisé pour aider les gens à trouver le meilleur moyen de se déplacer dans la ville.
-
-                  - Développeuse backend principale pour un produit.
-                  - J'ai créé un design frontend pour un produit.
-          - company: "Apple"
-            companyUrl: "https://example.com"
-            jobs:
-              - name: "Développeuse Junior de Logiciels"
-                date: "Jan 2020 - Août 2020"
-                featuredItems:
-                  fontAwesomeIcons:
-                    - icon: fa-brands fa-react
-                      url: https://react.dev/
-                    - icon: fab fa-x-twitter
-                      url: https://example.com
-                  customIcons:
-                    - icon: /fav.png
-                      url: "https://example.com"
-                content: |
-                  Je travaille actuellement comme développeuse de logiciels chez [exemple org.](https://example.com) à San Francisco, CA. Je travaille sur un projet qui sera utilisé pour aider les gens à trouver le meilleur moyen de se déplacer dans la ville.
-
-                  - Développeuse backend principale pour un produit.
-                  - J'ai créé un design frontend pour un produit.
-          - company: "Netflix"
-            companyUrl: "https://example.com"
-            jobs:
-              - name: "Designer UI/UX"
-                date: "Juin 2017 - Nov 2019"
-                content: |
-                  Je travaille actuellement comme développeuse de logiciels chez [exemple org.](https://example.com) à San Francisco, CA. Je travaille sur un projet qui sera utilisé pour aider les gens à trouver le meilleur moyen de se déplacer dans la ville.
-
-                  - Développeuse backend principale pour un produit.
-                  - J'ai créé un design frontend pour un produit.
-          - company: "Google"
-            companyUrl: "https://example.com"
-            jobs:
-              - name: "Designer de Produits"
-                date: "Fév 2016 - Mar 2017"
-                content: "Je travaille actuellement comme développeuse de logiciels chez [exemple org.](https://example.com) à San Francisco, CA. Je travaille sur un projet qui sera utilisé pour aider les gens à trouver le meilleur moyen de se déplacer dans la ville."
+            - name: Ingénieur de recherche contractuel
+              date: Décembre 2019 - Août. 2021
+              period: (1.5 year)
+              #featuredItems:
+              #  customIcons:
+              #    - icon: /images/inria.jpg
+              #      url: "https://www.inria.fr"
+                    # tooltip: Example tooltip content
+              content: >-
+                Au sein de l'équipe d'ingénierie du laboratoire public de recherche français
+                Inria, j'ai participé au développement d'applications de bureau destinées à la recherche:
+                *GNOMON* (simulation de la croissance des plantes), *sw2d* (dispersion chimique en
+                eaux peu profondes), et DTK (le framework Qt pour programmes scientifiques)
+                Ces logiciels sont des simulateurs scientifiques en C++ et
+                Python avec de la visualisation 3D via VTK et des interfaces graphiques avec Qt5. En partenariat
+                avec Inria, j'ai également travaillé avec le laboratoire CIRAD, où j'ai redéfinis le
+                cahier des charges pour un catalogue de meshs en 3D pour le logiicel de Lindenmayer Systems
+                *lpy*, utilisé en recherche pour simuler la croissance de cellules végétales.
+      # Education
       education:
+        enable: true
+        index: false
         items:
-          - title: "Master en Administration des Affaires"
-            school:
-              name: "Université de Californie, Berkeley"
-              url: "https://example.org"
-            date: "2013 - 2015"
-            GPA: "3.8 sur 5.0"
+          - title: Research Student - High-Performance Computing
+            date: 2021 - 2023
+            # GPA: Non-graded
             content: |-
-              Activités Extrascolaires
-                - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-          - title: "Licence en Sciences Informatiques"
+              - Research on long-reads DNA alignment with GPUs
+              - Japanese language practice
+              - Ph.D track
             school:
-              name: "Institut de Technologie du Massachusetts"
-              url: "https://example.org"
-            date: "2009 - 2013"
-            GPA: "3.9 sur 5.0"
-            content: |-
-              J'ai publié deux articles lors de la Conférence ACM SIGCHI sur l'Intelligence Artificielle.
-              - [Détection d'Objets Rapide et Précise avec un Réseau de Neurones Convolutifs](https://example.com)
-              - Détection de masques faciaux à l'aide d'un réseau de neurones convolutifs.
+              name: Osaka University (Japan)
+              url: https://www.osaka-u.ac.jp/en
 
-              Activités Extrascolaires
-                - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-            featuredLink:
-              enable: true
-              name: "Mon dossier académique"
-              url: "https://example.com"
-          - title: "Lycée"
+          - title: Master of Science - Embedded Systems
+            date: 2017 - 2019
+            GPA: 7.6 out of 10
+            content: >-
+              Academia:
+
+              - Courses on computer architecture, software engineering, real-time
+              embedded programming
+
+              - Electives on crowd-sourced computing, software architecture,
+              high-performance computing
+
+              - Master Thesis on acceleration of DNA seed extension for the BWA-MEM
+              DNA aligner using GPUs
+
+
+              Extracurricular Activities
+                - Member of Delft E-Sports Association
+                - Podcast production
             school:
-              name: "Lycée Thomas Jefferson pour les Sciences et la Technologie."
-              url: "https://example.org"
-            GPA: "4.2 sur 5.0"
+              name: Delft University of Technology (Netherlands)
+              url: https://www.tudelft.nl/en/
             featuredLink:
               enable: true
-              url: "https://example.com"
-      projects:
-        items:
-          - title: Hugo Profile
-            content: Un modèle Hugo hautement personnalisable et axé sur le mobile pour portfolio personnel et blog.
-            image: /images/projects/profile.png
-            featured:
-              name: Démo
-              link: https://hugo-profile.netlify.app
-            badges:
-              - "Hugo"
-              - "Bootstrap"
-              - "Javascript"
-            links:
-              - icon: fa fa-envelope
-                url: mailto:?subject=Modèle%20Hugo%20Profile&body=Découvrez-le:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
-              - icon: fab fa-github
-                url: https://github.com/gurusabarish/hugo-profile
-              - icon: fab fa-twitter
-                url: https://twitter.com/intent/tweet?text=Découvrez-le:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
-          - title: Convertisseur d'Images
-            content: Une application web pour convertir des images en pdf, png en jpg, png en jpg et png en webp sans base de données en utilisant django.
-            image: /images/projects/converter.jpg
-            featured:
-              name: Démo
-              link: https://django-converter.herokuapp.com
-            badges:
-              - "Django"
-              - "Bootstrap"
-            links:
-              - icon: fab fa-github
-                url: https://github.com/gurusabarish/converter
-          - title: Hugo Profile V2
-            content: Un modèle Hugo propre et simple pour portfolio personnel et blog.
-            image: /images/projects/profile2.jpg
-            featured:
-              name: Démo V2
-              link: https://hugo-profile-2.netlify.app
-            badges:
-              - "Hugo"
-              - "Bootstrap"
-              - "Javascript"
-            links:
-              - icon: fab fa-github
-                url: https://github.com/gurusabarish/HugoProfileV2
+              name: My master thesis
+              url: >-
+                https://repository.tudelft.nl/islandora/object/uuid%3Abd22471f-058a-4071-95bb-5126e263124b
+
+          - title: Master of Science Teaching - Mechatronics
+            date: 2014 - 2017
+            GPA: 7.5 out of 10
+            content: |
+              - Double-BSc obtained with University of Rennes 1
+                * Mechanical Engineering: structure engineering, beam theory, thermodynamics
+                * Electrical Engineering: power electronics, networking, antennas science
+                * Multiphysics simulation and 3D modeling
+              - Master degree for teaching from ENS Rennes
+              - Passed *Agrégation*, the certification for teachers in France
+            school:
+              name: Ecole Normale Supérieure de Rennes (France)
+              url: https://international.ens-rennes.fr/
+            featuredLink:
+              enabled: true
+              name: Research - Application to Throwing (MIG 2015)
+              url: >-
+                https://inria.hal.science/hal-01205162v1/file/CruzRuizetal_MIG2015_FINAL.pdf
+
+
+      # Achievements
       achievements:
+        enable: true
+        # title: "Custom Name"
         items:
-          - title: Finaliste Google Kickstart
-            content: J'ai résolu tous les problèmes avec une solution optimale.
-            url: https://example.com
-            image: /images/achievement.jpg
-          - title: Gagnant du Hackathon Facebook
-            content: J'ai développé un produit utilisant l'Intelligence Artificielle.
-            image: /images/achievement.jpg
-          - title: Hugo Profile
-            content: J'ai développé un thème et j'obtiens plus de 1K téléchargements par mois.
-            url: "https://github.com/gurusabarish/hugo-profile"
-            image: /images/achievement.jpg
-          - title: Finaliste Microsoft Imagine
-            content: Nous avons développé un produit qui peut aider les autres.
-          - title: Google Summer of Code
-            content: J'ai contribué à un projet open source.
-            url: https://example.com
-      contact:
-        content: Ma boîte de réception est toujours ouverte. Que vous ayez une question ou que vous vouliez simplement dire bonjour, je ferai de mon mieux pour vous répondre!
-        btnName: Écrivez-moi
+          - title: MEXT Scholarship 2020
+            content: I earned the Monbunkagakusho Scholarship from the Japan’s Ministry of Education, Culture, Sports, Science and Technology.
+            # url: https://www.mext.go.jp/en/policy/education/highered/title02/detail02/sdetail02/1373897.htm
+            image: /images/mext.png
+          - title: Teaching exam awardee "Agrégation"
+            content: I passed the national competitive exam "Agrégation" to teach at Bachelor level in France.
+            # url: https://www.mext.go.jp/en/policy/education/highered/title02/detail02/sdetail02/1373897.htm
+            image: /images/ministere-education.png
+
+      # projects
+      projects:
+        enable: true
+        title: Projects
+        items:
+          - title: 'Website: Calvinball Consortium'
+            content: >-
+              Website and code for podcasts presentation for the Calvinball
+              Consortium Podcast Network, along with various services (file hosting,
+              voice chat server, user management with Cockpit)
+            image: /images/projects/calvinball1.jpg
+            badges:
+              - Hugo
+              - Ruby
+              - Javascript
+              - Linux server
+              - Ansible
+            featured:
+              name: See website
+              link: https://www.calvinballconsortium.fr
+            links:
+              - icon: fab fa-github
+                url: https://github.com/yattoz/calvinball-website
+          - title: 'Android app: R/a/dio'
+            content: >-
+              An Android app to listen to the webradio R/a/dio, packed with
+              features: sleep, alarm, song request & favorites, previous and next
+              queued songs.
+            image: /images/projects/radio2.jpg
+            badges:
+              - Android
+              - Kotlin
+              - Google Play Store
+            featured:
+              name: Google Play
+              link: https://play.google.com/store/apps/details?id=io.r_a_d.radio2
+            links:
+              - icon: fab fa-github
+                url: https://github.com/yattoz/radio2
+          - title: Podcast Recommandé
+            content: >-
+              A podcast to discover music following YouTube recommendations (in
+              French). 80 episodes in 5 years.
+            image: /images/projects/recommande1.jpg
+            badges:
+              - Music
+              - DAW
+              - Podcast
+            featured:
+              name: Latest episodes
+              link: https://www.calvinballconsortium.fr/podcasts/recommande
+            links:
+              - icon: fab fa-spotify
+                url: https://open.spotify.com/show/4EtqYwTwE3Z138ST2C3cEz
+              - icon: fab fa-twitter
+                url: https://twitter.com/recommande0
+          - title: Calvinball Bonus
+            content: >-
+              Series of musical montages as bonus for the podcast Calvinball.
+            image: /images/projects/calvinball.png
+            badges:
+              - Music
+              - DAW
+              - Podcast
+            featured:
+              name: Listen on Youtube
+              link: https://www.youtube.com/@CalvinballBonus
+            links:
+              - icon: fab fa-youtube
+                url: https://www.youtube.com/@CalvinballBonus
+          - title: AMV Céleste 2
+            content: >-
+              Video montage with Da Vinci Resolve for the anime-zapping project AMV Céleste 2.
+            image: /images/projects/amv-celeste-2.png
+            badges:
+              - Video Editing
+              - Da Vinci Resolve
+              - Japanese
+            featured:
+              name: Watch on Youtube
+              link: https://www.youtube.com/watch?v=4gTwaTeUzjU
+            links:
+              - icon: fab fa-youtube
+                url: https://www.youtube.com/watch?v=4gTwaTeUzjU
+
+        #Contact
+        contact:
+          enable: true
+          # title: "Custom Name"
+          content: >-
+            Whether you have a question or just want to say hi, I’ll get back to you!
+          email: 'levyjo963@gmail.com'
+          btnName: Mail me
+          # formspree:
+          #   enable: true # `contact.email` value will be ignored
+          #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+          #   emailCaption: "Enter your email address"
+          #   messageCaption: "Enter your message here"
+          #   messageRows: 5
   jp:
     contentDir: "content/jp"
     languageName: "日本語"
@@ -560,290 +919,6 @@ params:
       disableAchievements: false
       disableContact: false
 
-  # Hero
-
-  hero:
-    enable: true
-    intro: Hi, my name is
-    title: Jonathan Levy.
-    subtitle: >- 
-      Software Engineer,
-      Passionate about Japan.
-    content: >-
-      I work on all things programming: desktop software,
-      smartphone apps, high-performance GPU computin,
-      web and hosting. Also, I am a documentation maniac.
-    image: /images/photo.jpg
-    button:
-      enable: true
-      name: Resume
-      url: /assets/cv_en.pdf
-      download: true
-      newPage: false
-    socialLinks:
-      fontAwesomeIcons:
-        - icon: fab fa-github
-          url: https://github.com/yattoz
-        # - icon: fab fa-github
-        #          url: https://github.com/j-levy
-  
-    bottomImage:
-      enable: true
-      roundImage: true # Make hero image circular | default false
-
-  about:
-    enable: true
-    title: About Me
-    image: /images/hero-hinotou.jpg
-    content: >
-
-      I am a tri-lingual English, French, Japanese software engineer.
-
-      I studied computer science, computer science and mechatronics, science teaching. 
-
-      With a knack for multiculturalism and travel, I had the opportunity to
-      study in France, the Netherlands and Japan, first in mechatronics
-      engineering, then in Computer Science and high-performance computing with
-      GPUs. Today, I work at Qualcomm Technologies (Cork, Ireland).
-      Passionate about Japan since childhood, I'm also learning Japanese and particupated in Japanese-related projects: R/a/dio, AMV Céleste 2 and more. 
-    skills:
-      enable: true
-      title: 'A quick list of my core passions:'
-      items:
-        - C/C++, Python, Kotlin, all kind programming
-        - Documentation, Markdown, Confluence
-        - Project management, Agile, Git
-        - Linux & Windows programming
-        - Japanese language, animation
-        - Vocaloid, music, Cubase
-
-
-  # Experience
-  experience:
-    enable: true
-    # title: "Custom Name"
-    items:
-      - company: Qualcomm Technologies
-        companyUrl: https://www.qualcomm.com
-        jobs: 
-        - name: Software Engineer - Graphics
-          date: Jun. 2023 - Now
-          # featuredItems:
-          #  customIcons:
-          #    - icon: /images/qualcomm.png
-          #      url: "https://www.qualcomm.com"
-                # tooltip: Example tooltip content
-          period: (3 years)
-          info:
-              content: Working as a senior software developer
-          content: >-
-            I am working on the DirectX 12 User-Mode Driver for DX12.2 features for Windows on Snapdragon laptops.
-            On *raytracing support for the Adreno GPU series on Windows*, I mainly work on debugging the Windows driver for DirectX 12,
-            implementing features, and developing DirectX applications for tests.
-          
-      - company: Inria
-        companyUrl: https://www.inria.fr
-        jobs:
-        - name: R&D Software Engineer
-          date: Dec. 2019 - Aug. 2021
-          period: (1.5 year)
-          #featuredItems:
-          #  customIcons:
-          #    - icon: /images/inria.jpg
-          #      url: "https://www.inria.fr"
-                # tooltip: Example tooltip content
-          content: >-
-            In the engineering team of the French public research laboratory
-            Inria, I contributed to desktop applications for research, like
-            *GNOMON* (plant growth simulation) and *sw2d* (chemical dispersion in
-            shallow waters).
-            This involved scientific simulation with C++ and
-            Python, 3D visualization with VTK and GUI with Qt5. In partnership
-            with Inria, I also worked at CIRAD, where I helped defining the
-            requirements for a 3D mesh catalogue for the Lindenmayer Systems
-            software *lpy*. This software is used in research and academia to
-            describing plant cells growth.
-
-  # Education
-  education:
-    enable: true
-    index: false
-    items:
-      - title: Research Student - High-Performance Computing
-        date: 2021 - 2023
-        # GPA: Non-graded
-        content: |-
-          - Research on long-reads DNA alignment with GPUs
-          - Japanese language practice
-          - Ph.D track
-        school:
-          name: Osaka University (Japan)
-          url: https://www.osaka-u.ac.jp/en
-
-      - title: Master of Science - Embedded Systems
-        date: 2017 - 2019
-        GPA: 7.6 out of 10
-        content: >-
-          Academia:
-
-          - Courses on computer architecture, software engineering, real-time
-          embedded programming
-
-          - Electives on crowd-sourced computing, software architecture,
-          high-performance computing
-
-          - Master Thesis on acceleration of DNA seed extension for the BWA-MEM
-          DNA aligner using GPUs
-
-
-          Extracurricular Activities
-            - Member of Delft E-Sports Association
-            - Podcast production
-        school:
-          name: Delft University of Technology (Netherlands)
-          url: https://www.tudelft.nl/en/
-        featuredLink:
-          enable: true
-          name: My master thesis
-          url: >-
-            https://repository.tudelft.nl/islandora/object/uuid%3Abd22471f-058a-4071-95bb-5126e263124b
-
-      - title: Master of Science Teaching - Mechatronics
-        date: 2014 - 2017
-        GPA: 7.5 out of 10
-        content: |
-          - Double-BSc obtained with University of Rennes 1
-            * Mechanical Engineering: structure engineering, beam theory, thermodynamics
-            * Electrical Engineering: power electronics, networking, antennas science
-            * Multiphysics simulation and 3D modeling
-          - Master degree for teaching from ENS Rennes
-          - Passed *Agrégation*, the certification for teachers in France
-        school:
-          name: Ecole Normale Supérieure de Rennes (France)
-          url: https://international.ens-rennes.fr/
-        featuredLink:
-          enabled: true
-          name: Research - Application to Throwing (MIG 2015)
-          url: >-
-            https://inria.hal.science/hal-01205162v1/file/CruzRuizetal_MIG2015_FINAL.pdf
-
-
-  # Achievements
-  achievements:
-    enable: true
-    # title: "Custom Name"
-    items:
-      - title: MEXT Scholarship 2020
-        content: I earned the Monbunkagakusho Scholarship from the Japan’s Ministry of Education, Culture, Sports, Science and Technology.
-        # url: https://www.mext.go.jp/en/policy/education/highered/title02/detail02/sdetail02/1373897.htm
-        image: /images/mext.png
-      - title: Teaching exam awardee "Agrégation"
-        content: I passed the national competitive exam "Agrégation" to teach at Bachelor level in France.
-        # url: https://www.mext.go.jp/en/policy/education/highered/title02/detail02/sdetail02/1373897.htm
-        image: /images/ministere-education.png
-
-  # projects
-  projects:
-    enable: true
-    title: Projects
-    items:
-      - title: 'Website: Calvinball Consortium'
-        content: >-
-          Website and code for podcasts presentation for the Calvinball
-          Consortium Podcast Network, along with various services (file hosting,
-          voice chat server, user management with Cockpit)
-        image: /images/projects/calvinball1.jpg
-        badges:
-          - Hugo
-          - Ruby
-          - Javascript
-          - Linux server
-          - Ansible
-        featured:
-          name: See website
-          link: https://www.calvinballconsortium.fr
-        links:
-          - icon: fab fa-github
-            url: https://github.com/yattoz/calvinball-website
-      - title: 'Android app: R/a/dio'
-        content: >-
-          An Android app to listen to the webradio R/a/dio, packed with
-          features: sleep, alarm, song request & favorites, previous and next
-          queued songs.
-        image: /images/projects/radio2.jpg
-        badges:
-          - Android
-          - Kotlin
-          - Google Play Store
-        featured:
-          name: Google Play
-          link: https://play.google.com/store/apps/details?id=io.r_a_d.radio2
-        links:
-          - icon: fab fa-github
-            url: https://github.com/yattoz/radio2
-      - title: Podcast Recommandé
-        content: >-
-          A podcast to discover music following YouTube recommendations (in
-          French). 80 episodes in 5 years.
-        image: /images/projects/recommande1.jpg
-        badges:
-          - Music
-          - DAW
-          - Podcast
-        featured:
-          name: Latest episodes
-          link: https://www.calvinballconsortium.fr/podcasts/recommande
-        links:
-          - icon: fab fa-spotify
-            url: https://open.spotify.com/show/4EtqYwTwE3Z138ST2C3cEz
-          - icon: fab fa-twitter
-            url: https://twitter.com/recommande0
-      - title: Calvinball Bonus
-        content: >-
-          Series of musical montages as bonus for the podcast Calvinball.
-        image: /images/projects/calvinball.png
-        badges:
-          - Music
-          - DAW
-          - Podcast
-        featured:
-          name: Listen on Youtube
-          link: https://www.youtube.com/@CalvinballBonus
-        links:
-          - icon: fab fa-youtube
-            url: https://www.youtube.com/@CalvinballBonus
-      - title: AMV Céleste 2
-        content: >-
-          Video montage with Da Vinci Resolve for the anime-zapping project AMV Céleste 2.
-        image: /images/projects/amv-celeste-2.png
-        badges:
-          - Video Editing
-          - Da Vinci Resolve
-          - Japanese
-        featured:
-          name: Watch on Youtube
-          link: https://www.youtube.com/watch?v=4gTwaTeUzjU
-        links:
-          - icon: fab fa-youtube
-            url: https://www.youtube.com/watch?v=4gTwaTeUzjU
-
-
-
-
-  #Contact
-  contact:
-    enable: true
-    # title: "Custom Name"
-    content: >-
-      Whether you have a question or just want to say hi, I’ll get back to you!
-    email: 'levyjo963@gmail.com'
-    btnName: Mail me
-    # formspree:
-    #   enable: true # `contact.email` value will be ignored
-    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
-    #   emailCaption: "Enter your email address"
-    #   messageCaption: "Enter your message here"
-    #   messageRows: 5
 
   footer:
     recentPosts:
