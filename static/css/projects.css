@@ -1,3 +1,5 @@
+
+
 .align-middle
 {
     min-height: 10vh !important;
@@ -6,4 +8,24 @@
 .hero-bottom-svg
 {
     visibility: hidden;
+}
+
+.card
+{
+    background-color: #eee;
+}
+
+.dark .card
+{
+    background-color: #222;
+}
+
+.dark .btn-sm
+{
+    color: #eee;
+}
+
+.light .badge
+{
+    color: #222;
 }
