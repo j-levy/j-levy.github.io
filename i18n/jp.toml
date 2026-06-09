@@ -1,0 +1,77 @@
+# Navigation
+[nav_about]
+other = "について"
+
+[nav_experience]
+other = "経験"
+
+[nav_education]
+other = "学歴"
+
+[nav_projects]
+other = "プロジェクト"
+
+[nav_achievements]
+other = "業績"
+
+[nav_contact]
+other = "連絡"
+
+[search_placeholder]
+other = "検索"
+
+# Sections
+[about]
+other = "私のこと"
+
+[experience]
+other = "経験"
+
+[education]
+other = "学歴"
+
+[projects]
+other = "プロジェクト"
+
+[achievements]
+other = "業績"
+
+[contact]
+other = "連絡してください"
+
+# Contact form
+[contact_email_placeholder]
+other = "メールを入力してください"
+
+[contact_message_placeholder]
+other = "メッセージを入力してください"
+
+# Footer
+[recent_posts]
+other = "新作"
+
+# Common terms
+[read]
+other = "既読"
+
+[toc]
+other = "目次"
+
+[tags]
+other = "タグ"
+
+[social]
+other = "ソーシャル"
+
+[copyright]
+other = "All Rights Reserved"
+
+[email_text]
+other = "このページをチェックしてください"
+
+[page_not_found]
+other = "ページを見つけられません"
+
+# Date formats
+[min_read]
+other = "min read"

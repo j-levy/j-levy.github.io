@@ -1,0 +1,9 @@
+.align-middle
+{
+    min-height: 10vh !important;
+}
+
+.hero-bottom-svg
+{
+    visibility: hidden;
+}
