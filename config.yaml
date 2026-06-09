@@ -545,7 +545,7 @@ params:
     align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
     # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
     # showBrandLogo: false # Show brand logo in nav bar | default is true
-    brandName: "Jonathan LEVY" # Brand name for the brand | default is the title variable
+    brandName: "Jonathan Levy" # Brand name for the brand | default is the title variable
     disableSearch: false
     # searchPlaceholder: "Search"
     stickyNavBar:
@@ -565,57 +565,57 @@ params:
   hero:
     enable: true
     intro: Hi, my name is
-    title: Jonathan LEVY.
-    subtitle: I develop software. Maybe for you?
+    title: Jonathan Levy.
+    subtitle: >- 
+      Software Engineer,
+      Passionate about Japan.
     content: >-
-      Whether it's working on desktop programs, high-performance computing
-      software or just a website, when I'd like something to exist, I may end up
-      doing it myself. 
-    image: /images/hero-hinotou.jpg
+      I work on all things programming: desktop software,
+      smartphone apps, high-performance GPU computin,
+      web and hosting. Also, I am a documentation maniac.
+    image: /images/photo.jpg
     button:
       enable: true
       name: Resume
-      url: /assets/resume_jonathan_levy.pdf
+      url: /assets/cv_en.pdf
       download: true
       newPage: false
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
-          url: https://github.com/j-levy
-        - icon: fab fa-github-alt
           url: https://github.com/yattoz
+        # - icon: fab fa-github
+        #          url: https://github.com/j-levy
   
     bottomImage:
       enable: true
-    # roundImage: true # Make hero image circular | default false
+      roundImage: true # Make hero image circular | default false
 
   about:
     enable: true
     title: About Me
-    image: /images/photo.jpg
+    image: /images/hero-hinotou.jpg
     content: >
-      I am a French software developer, I like both low-level programming
-      involving memory management or thread concurrency, and implementing
-      graphical interfaces. My background is a mix of computer engineering,
-      computer science and mechatronics, with a hint of science teaching. 
 
+      I am a tri-lingual English, French, Japanese software engineer.
+
+      I studied computer science, computer science and mechatronics, science teaching. 
 
       With a knack for multiculturalism and travel, I had the opportunity to
       study in France, the Netherlands and Japan, first in mechatronics
       engineering, then in Computer Science and high-performance computing with
-      GPUs. Today, I work at Qualcomm Technologies (Cork, Ireland) on DirectX 12
-      driver and in particular raytracing support, for the latest generation of
-      Adreno GPUs.
+      GPUs. Today, I work at Qualcomm Technologies (Cork, Ireland).
+      Passionate about Japan since childhood, I'm also learning Japanese and particupated in Japanese-related projects: R/a/dio, AMV Céleste 2 and more. 
     skills:
       enable: true
-      title: 'Here are a few technologies I recently worked with:'
+      title: 'A quick list of my core passions:'
       items:
-        - C++
-        - Low-level
-        - DirectX 12
-        - Linux & Windows
-        - Python
-        - Git
+        - C/C++, Python, Kotlin, all kind programming
+        - Documentation, Markdown, Confluence
+        - Project management, Agile, Git
+        - Linux & Windows programming
+        - Japanese language, animation
+        - Vocaloid, music, Cubase
 
 
   # Experience
@@ -628,20 +628,17 @@ params:
         jobs: 
         - name: Software Engineer - Graphics
           date: Jun. 2023 - Now
-          featuredItems:
-            customIcons:
-              - icon: /images/qualcomm.png
-                url: "https://www.qualcomm.com"
+          # featuredItems:
+          #  customIcons:
+          #    - icon: /images/qualcomm.png
+          #      url: "https://www.qualcomm.com"
                 # tooltip: Example tooltip content
           period: (3 years)
           info:
               content: Working as a senior software developer
           content: >-
-            I am currently working at Qualcomm Technologies in the DirectX 12
-            Driver team for the Adreno GPU. We are focusing on the latest DirectX
-            12.2 features support for the Windows on Snapdragon laptops, and I am
-            working on *raytracing support for the Adreno GPU series on Windows*.
-            This includes debugging the Windows driver for DirectX 12,
+            I am working on the DirectX 12 User-Mode Driver for DX12.2 features for Windows on Snapdragon laptops.
+            On *raytracing support for the Adreno GPU series on Windows*, I mainly work on debugging the Windows driver for DirectX 12,
             implementing features, and developing DirectX applications for tests.
           
       - company: Inria
@@ -650,16 +647,17 @@ params:
         - name: R&D Software Engineer
           date: Dec. 2019 - Aug. 2021
           period: (1.5 year)
-          featuredItems:
-            customIcons:
-              - icon: /images/inria.jpg
-                url: "https://www.inria.fr"
+          #featuredItems:
+          #  customIcons:
+          #    - icon: /images/inria.jpg
+          #      url: "https://www.inria.fr"
                 # tooltip: Example tooltip content
           content: >-
             In the engineering team of the French public research laboratory
             Inria, I contributed to desktop applications for research, like
             *GNOMON* (plant growth simulation) and *sw2d* (chemical dispersion in
-            shallow waters). This involved scientific simulation with C++ and
+            shallow waters).
+            This involved scientific simulation with C++ and
             Python, 3D visualization with VTK and GUI with Qt5. In partnership
             with Inria, I also worked at CIRAD, where I helped defining the
             requirements for a 3D mesh catalogue for the Lindenmayer Systems
@@ -678,10 +676,10 @@ params:
           - Research on long-reads DNA alignment with GPUs
           - Japanese language practice
           - Ph.D track
-            
         school:
           name: Osaka University (Japan)
           url: https://www.osaka-u.ac.jp/en
+
       - title: Master of Science - Embedded Systems
         date: 2017 - 2019
         GPA: 7.6 out of 10
@@ -709,6 +707,7 @@ params:
           name: My master thesis
           url: >-
             https://repository.tudelft.nl/islandora/object/uuid%3Abd22471f-058a-4071-95bb-5126e263124b
+
       - title: Master of Science Teaching - Mechatronics
         date: 2014 - 2017
         GPA: 7.5 out of 10
@@ -722,6 +721,11 @@ params:
         school:
           name: Ecole Normale Supérieure de Rennes (France)
           url: https://international.ens-rennes.fr/
+        featuredLink:
+          enabled: true
+          name: Research - Application to Throwing (MIG 2015)
+          url: >-
+            https://inria.hal.science/hal-01205162v1/file/CruzRuizetal_MIG2015_FINAL.pdf
 
 
   # Achievements
@@ -731,13 +735,14 @@ params:
     items:
       - title: MEXT Scholarship 2020
         content: I earned the Monbunkagakusho Scholarship from the Japan’s Ministry of Education, Culture, Sports, Science and Technology.
-        url: https://www.mext.go.jp/en/policy/education/highered/title02/detail02/sdetail02/1373897.htm
+        # url: https://www.mext.go.jp/en/policy/education/highered/title02/detail02/sdetail02/1373897.htm
         image: /images/mext.png
-
+      - title: Teaching exam awardee "Agrégation"
+        content: I passed the national competitive exam "Agrégation" to teach at Bachelor level in France.
+        # url: https://www.mext.go.jp/en/policy/education/highered/title02/detail02/sdetail02/1373897.htm
+        image: /images/ministere-education.png
 
   # projects
-
-
   projects:
     enable: true
     title: Projects
@@ -793,6 +798,35 @@ params:
             url: https://open.spotify.com/show/4EtqYwTwE3Z138ST2C3cEz
           - icon: fab fa-twitter
             url: https://twitter.com/recommande0
+      - title: Calvinball Bonus
+        content: >-
+          Series of musical montages as bonus for the podcast Calvinball.
+        image: /images/projects/calvinball.png
+        badges:
+          - Music
+          - DAW
+          - Podcast
+        featured:
+          name: Listen on Youtube
+          link: https://www.youtube.com/@CalvinballBonus
+        links:
+          - icon: fab fa-youtube
+            url: https://www.youtube.com/@CalvinballBonus
+      - title: AMV Céleste 2
+        content: >-
+          Video montage with Da Vinci Resolve for the anime-zapping project AMV Céleste 2.
+        image: /images/projects/amv-celeste-2.png
+        badges:
+          - Video Editing
+          - Da Vinci Resolve
+          - Japanese
+        featured:
+          name: Watch on Youtube
+          link: https://www.youtube.com/watch?v=4gTwaTeUzjU
+        links:
+          - icon: fab fa-youtube
+            url: https://www.youtube.com/watch?v=4gTwaTeUzjU
+
 
 
 
